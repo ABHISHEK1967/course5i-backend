@@ -4,7 +4,7 @@ const dbOptions = require('./config/config')
 const sharedRouter = require('./sharedrouter.js')
 
 const app = express()
-const port = 8080
+const port = 3000
 
 app.use(express.json())
 app.use(
