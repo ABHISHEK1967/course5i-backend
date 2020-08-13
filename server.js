@@ -22,7 +22,9 @@ app.listen(port, () => {
 const pool = new Pool(dbOptions);
 
 pool.connect().then(() => {
+
     console.log("Successfully connected to database");
+
 }).catch((err) => {
     console.log(err);
 });
