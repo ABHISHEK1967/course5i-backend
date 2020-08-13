@@ -15,8 +15,8 @@ app.use(
 
 app.use(sharedRouter);
 
-app.listen(port, () => {
-    console.log(`App running on port ${port}.`)
+app.listen(process.env.PORT || port, () => {
+    console.log(`App has started running.`)
 })
 
 const pool = new Pool(dbOptions);
